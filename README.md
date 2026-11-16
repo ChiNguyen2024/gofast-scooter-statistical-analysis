@@ -1,39 +1,38 @@
-# Статистический анализ данных сервиса аренды самокатов GoFast
+# Statistical Analysis of GoFast Scooter Rental Service
 
-## Описание проекта
-Анализ данных пользователей и поездок сервиса аренды самокатов GoFast. 
-Цель — проверить гипотезы, которые помогут бизнесу принять решения о развитии подписки Ultra.
+## Project Description
+Analysis of user and ride data for the GoFast scooter rental service. Goal — test hypotheses to help the business make decisions about developing the Ultra subscription.
 
-## Данные
-- **Источник:** GoFast (внутренние данные сервиса)
-- **Охват:** несколько городов России, январь — декабрь 2021 г.
-- **Размер:** 1565 пользователей, 18 068 поездок
-- **Тип данных:** пользовательские данные + данные о поездках + тарифы
+## Data
+- **Source:** GoFast (internal service data)
+- **Coverage:** multiple cities in Russia, January — December 2021
+- **Size:** 1,565 users, 18,068 rides
+- **Data types:** user data + ride data + subscription plans
 
-## Ход работы
-- Предобработка данных: удаление дубликатов, аномалий, приведение типов
-- EDA: анализ возраста пользователей, расстояния и продолжительности поездок
-- Подсчёт помесячной выручки по сегментам
-- Проверка статистических гипотез (t-тест):
-  - пользователи с подпиской тратят больше времени на поездки
-  - среднее расстояние поездок с подпиской не превышает 3130 м
-  - выручка от пользователей с подпиской выше
-- Биномиальное распределение и аппроксимация нормальным распределением
+## Workflow
+- Data preprocessing: duplicate removal, anomaly filtering, type conversion
+- EDA: user age analysis, ride distance and duration
+- Monthly revenue calculation by segment
+- Statistical hypothesis testing (t-test):
+  - subscribers spend more time per ride
+  - average ride distance for subscribers does not exceed 3,130 m
+  - revenue from subscribers is higher
+- Binomial distribution and normal approximation
 
-## Ключевые выводы
-- **Время поездок:** пользователи с подпиской Ultra тратят больше времени на поездки
-- **Расстояние:** среднее расстояние поездок с подпиской не превышает 3130 м
-- **Выручка:** помесячная выручка от пользователей с подпиской выше, чем без подписки
-- **Рекомендация:** стимулировать переход пользователей на подписку Ultra как более выгодный сегмент
+## Key Findings
+- **Ride duration:** Ultra subscribers spend more time per ride
+- **Distance:** average ride distance for subscribers does not exceed 3,130 m
+- **Revenue:** monthly revenue from subscribers is higher than from non-subscribers
+- **Recommendation:** incentivize users to switch to Ultra subscription as a more profitable segment
 
-## Стек
+## Tech Stack
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-lightgrey)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-lightgrey)
 ![Scipy](https://img.shields.io/badge/Scipy-lightgrey)
 
-## Структура репозитория
+## Repository Structure
 ```
-├── gofast_statistical_analysis.ipynb  # основной ноутбук
+├── gofast_statistical_analysis.ipynb  # main notebook
 └── README.md
 ```
